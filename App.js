@@ -1,9 +1,5 @@
-import React from "react";
+import AppNavigation from "./src/navigations/AppNavigation";
 
-import MainNavigator from "./src/navigations/MainNavigator";
-
-const App = () => {
-  return <MainNavigator />;
-};
-
-export default App;
+export default function App() {
+  return <AppNavigation />;
+}

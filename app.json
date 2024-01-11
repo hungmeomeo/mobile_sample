@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "my_app",
-    "slug": "my_app",
+    "name": "BottomTabDrawer",
+    "slug": "BottomTabDrawer",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,23 +15,16 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "gdsc"
+      "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      },
-      "package": "com.anonymous.my_app"
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    },
-    "extra": {
-      "eas": {
-        "projectId": "ec59b4c6-6097-4a30-88e8-28d9f5805ad1"
-      }
     }
   }
 }
