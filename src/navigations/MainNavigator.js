@@ -1,10 +1,14 @@
-import React from 'react';
-import {createStackNavigator} from '@react-navigation/stack';
-import {NavigationContainer} from '@react-navigation/native';
-import TabNavigator from './TabNavigator';
-import {StatusBar} from 'react-native';
+import React from "react";
+import { createStackNavigator } from "@react-navigation/stack";
+import { NavigationContainer } from "@react-navigation/native";
+import { createDrawerNavigator } from "@react-navigation/drawer";
+import TabNavigator from "./TabNavigator";
+import { StatusBar } from "react-native";
+import HomeScreen from "../screens/HomeScreen";
+import DrawerNavigator from "./DrawerNavigator";
 
 const Stack = createStackNavigator();
+const Drawer = createDrawerNavigator();
 
 const MainNavigator = () => {
   return (
@@ -14,6 +18,13 @@ const MainNavigator = () => {
         <Stack.Screen
           name="Root"
           component={TabNavigator}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="DrawerRoot"
+          component={DrawerNavigator}
           options={{
             headerShown: false,
           }}
