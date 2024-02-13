@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Button, Image, View } from "react-native";
 import { launchImageLibrary } from "react-native-image-picker";
 import ImagePickerExample from "./src/components/ImagePicker";
+import HomeHero from "./src/components/Hero";
 
 const App = () => {
   const [imageUri, setImageUri] = useState(null);
@@ -26,6 +27,7 @@ const App = () => {
 
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+      <HomeHero></HomeHero>
       <ImagePickerExample></ImagePickerExample>
     </View>
   );
